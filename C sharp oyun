@@ -1,0 +1,70 @@
+KOD YAZMAYA BAŞLARKEN void Start() kullanırız
+
+void Start()
+{
+  Debug.Log("İlk scriptimiz");
+}
+
+
+ya da ilk scriptimiz çıktısı sonucu için
+
+void Start()
+{
+  print("ikinci scriptim");
+}             
+
+yazabiliriz.
+
+
+
+
+-Her açılan parantez kapatılması gerekir
+-Her satır sonu ";" ile bitmelidir
+
+-------------------------------------------------------------------------------------------------------------
+
+EN YAYGIN DEĞİŞKEN TÜRLERİ
+
+1-)String=Yazı tabanlı metinleri tutan değişkendir.Tırnak içinde metni yazarız.
+2-)İnteger=Pozitif ya da negatif tam sayıları tutan değişkendir.Örn: 2,5,8,14
+3-)Float=Kesirli,ondalıklı sayıları tutan değişkendir.Örn: 0.25f   3.14f (ondalıklı sayının sonuna f yazarız)
+4-)Bool=True ya da false dediğimiz değişken türleridir.Örn: True-False
+
+------------------------------------------------------------------------------------------------------------
+
+Değişken ismi verilirken dikkat etmemiz gerekenler;
+-Türkçe karakter kullanmamalıyız
+-Boşluk kullanılmamalıdır.balon sayisi yerine balon_sayisi 
+-Değişken isimleri sayılar ile başlamaz.Örn:  1degisken, 3can vs.
+-Özel karakter "_" dışında kullanılmaz. hedef_adedi gibi
+-Bir değişken ismi bir kez kullanılmalı.İkinci defa kullanılmaz
+
+--------------------------------------------------------------------------------------------------------------
+
+Değişkenler nasıl tanımlanır?
+
+1-)Başına private ya da public eklentisi getiririz.
+-public bütün scriplerden ulaşılabilen genel demektir
+-private sadece o script içinde kullanabileceğimiz türden,gizli demek
+-public ya da private eklentisi yazmazsak otomatik olarak private algılar
+
+2-)Değişkenin türü yazılır
+3-)Değişkenin ismi yazılır
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
