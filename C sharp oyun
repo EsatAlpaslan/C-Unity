@@ -54,9 +54,69 @@ Değişkenler nasıl tanımlanır?
 
 ----------------------------------------------------------------------------------------------------------------
 
+"//" işareti ile açıklama satırı yazarız
 
 
 
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+    public string metin = "Bu ilk metin";
+
+
+    void Start()
+    {
+        print(metin);
+        
+    }
+
+}
+
+//Bunu yaptığımızda çıktı olarak bize Bu ilk metin yazısı çıkar
+
+
+----------------------------------------------------------------------------
+
+
+Burada public dediğimiz için Unity içinden de değişiklik yapabiliriz.
+Ama private yaparsak Unity içinden düzenleme yapamayız
+
+Eğer privste iken Unityden düzenleme yapmak istersek;
+
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+
+[SerializeField]
+string metin = "Bu ilk metin";
+
+
+    void Start()
+    {
+        print(metin);
+        
+    }
+
+}
+
+Yazarız.
+
+--------------------------------------------------------------------------------------------------------  
+
+Eğer başka bir script içinden buna ulaşmak istiyoruz ancak Unityden düzenleme yapılmasın istersek  ;
+
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+
+    [HideInInspector]
+    public string metin = "Bu ilk metin";
+    //yazarız
+
+    void Start()
+    {
+        print(metin);
+        
+    }
+
+}
 
 
 
