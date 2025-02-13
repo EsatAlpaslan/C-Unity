@@ -119,6 +119,148 @@ public class NewMonoBehaviourScript : MonoBehaviour
 }
 
 
+-------------------------------------------------------------------------------------------------------------------------
+
+İnteger, float ve bool değişkenlerini kullanalım:
+
+
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+    int sayac = 0;
+
+
+    void Start()
+    {
+        print(sayac);
+        
+    }
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Burada sayac tanımını birden fazla kez kullanabiliriz;
+
+
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+    int sayac = 0;
+
+
+    void Start()
+    {
+        print(sayac);
+
+        sayac=20;
+
+        print("sayac degiskeninin degeri degisti  "+sayac);
+    }
+
+    
+   
+  ---------------------------------------------------------------------------------------------------------------------------  
+   
+
+
+
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+    int sayac = 0;
+
+    bool gameOver; // true ya da false değeri alır
+
+    float finalNotu=96.75f;   //Burada float değişkeni olduğunu göstermek için sayının yanıjna f yazdık.
+
+
+    void Start()
+    {
+        print(finalNotu);
+
+       
+    }
+
+------------------------------------------------------------------------------------------------------------------------------
+
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+
+    bool gameOver; // true ya da false değeri alır
+
+    void Start()
+    {
+        print(gameOver);  //bool değişkenine değer vermezsek false olarak çevirir.
+
+       
+    }
+
+
+
+________________________________________________________________________________________________________________________________
+
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+
+    bool gameOver=true; // true ya da false değeri alır
+
+    void Start()
+    {
+        print(gameOver);  //bool değişkenine değer vermezsek false olarak çevirir.
+
+       
+    }
+    //Çıktımız true olue
+
+
+_______________________________________________________________________________________________________________________________________
+
+Printin içerisine değişkenlerimizi yazdırırken kısa yöntem olarak:
+
+
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+
+   string benimAdim="Esat";
+
+   int yasim=21;
+
+    void Start()
+    {
+        print($"Bu kodu yazanin adi:{benimAdim} ve yaşı:{yasim}"); 
+
+       
+    }
+
+
+_______________________________________________________________________________________________________________________________________
+
+
+                   MATEMATİKSEL OPERATÖRLER
+
+
+1-)Toplama Operatörü (+):
+
+
+public class TestManager : MonoBehaviour
+{
+    int sayac_1 = 30;
+    int sayac_2 = 20;
+    void Start()
+    {
+        print(sayac_1+sayac_2);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
