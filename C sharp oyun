@@ -1,4 +1,4 @@
-KOD YAZMAYA BAŞLARKEN void Start() kullanırız
+  KOD YAZMAYA BAŞLARKEN void Start() kullanırız
 
 void Start()
 {
@@ -253,12 +253,614 @@ public class TestManager : MonoBehaviour
 
 
 
+2-)Çıkarma Operatörü (-):
+
+
+
+public class TestManager : MonoBehaviour
+{
+    int sayac_1 = 30;
+    int sayac_2 = 20;
+
+    int yeniSonuc;
+    void Start()
+    {
+        yeniSonuc = sayac_2 - sayac_1;
+        print(yeniSonuc);
+    }
+
+}
+
+
+
+3-)Çarpma Operatörü:
+
+{
+    int sayac_1 = 30;
+    int sayac_2 = 20;
+
+    int yeniSonuc;
+    void Start()
+    {
+        yeniSonuc = sayac_2 * sayac_1;
+        print(yeniSonuc);
+    }
+
+}
+
+
+4-)Bölme Operatörü(/):
+
+{
+    int sayac_1 = 30;
+    int sayac_2 = 20;
+
+    //int yeniSonuc;
+    float yeniSonuc;
+    void Start()
+    {
+       // yeniSonuc = sayac_1 / sayac_2;
+        print(yeniSonuc);
+    }
+
+}
+
+(Sonuc 1 çıkar çünkü int şeklinde tanımladık ve üstüne yeniSonuc u da float yapsak da yine 1 çıkıyor
+Çünkü ilk iki sayıyı int diye tanımladığımızdana sonucu da int diye çıkarttı unity.Düzeltmek için
+sayacları fa float içinde yazmalıyız)
+
+{
+    float sayac_1 = 30;
+    float sayac_2 = 20;
+
+    //int yeniSonuc;
+    float yeniSonuc;
+    void Start()
+    {
+       // yeniSonuc = sayac_1 / sayac_2;
+        print(yeniSonuc);
+    }
+
+}
+
+
+5-) ++  Operatörü:
+
+{
+    float sayac_1 = 30;
+    float sayac_2 = 20;
+
+    int baslangicDegeri = 50;
+    void Start()
+    {
+      baslangicDegeri++;
+      print(baslangicDegeri);
+    }
+
+}
+
+
+ 6-)
+
+{
+    float sayac_1 = 30;
+    float sayac_2 = 20;
+
+    int baslangicDegeri = 50;
+    void Start()
+    {
+      baslangicDegeri--;
+      print(baslangicDegeri);
+    }
+
+}
+
+   
+
+7-) Modül Operatörü (%):
+
+{
+    int birinciSayi=25;
+    int ikinciSayi=4;
+
+    int baslangicDegeri = 50;
+    void Start()
+    {
+      
+      print(birinciSayi % ikinciSayi);
+    }
+
+}
+
+------------------------------------------------------------------------------------------------------------------------------
+
+İf Değişkeni:
+
+{
+    int birinciSayi = 25;
+    int ikinciSayi = 4;
+
+    
+    void Start()
+    {
+
+        if(birinciSayi>ikinciSayi)
+        {
+            print("İstediğimiz sonuç dogru");
+        }
+    }
+
+}
+
+_____________________________________________________________________________________________________________________
+
+{
+    int birinciSayi = 25;
+    int ikinciSayi = 4;
+
+    bool oyunBittimi;//Tanımlamadığımız için false olur
+    void Start()
+    {
+
+        if(oyunBittimi==true)
+        {
+            print("Oyun Bitti");
+        }
+    }
+
+}   //Çıktı olarak bir şey basmaz
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+{
+    int birinciSayi = 25;
+    int ikinciSayi = 4;
+
+    bool oyunBittimi;//Tanımlamadığımız için false olur
+    void Start()
+    {
+
+        if(oyunBittimi==true)
+        {
+            print("Oyun Bitti");
+        }
+    }
+
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+{
+   public int birinciSayi = 25;
+   public int ikinciSayi = 4;
+
+    bool oyunBittimi=true;
+    void Start()
+    {
+
+        if(oyunBittimi==true)
+        {
+            print("Oyun Bitti");
+        }
+    }
+
+}
+
+//Çıktı olarak Oyun Bitti yazısını görürüz
+
+
+____________________________________________________________________________________________________________________________
+
+
+{
+    public int birinciSayi = 25;
+    public int ikinciSayi = 4;
+
+    bool oyunBittimi = true;
+    void Start()
+    {
+
+        if (oyunBittimi)  // if (oyunBittimi==true) demekle aynıdır
+        {
+            print("Oyun Bitti");
+        }
+    }
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+{
+    public int birinciSayi = 25;
+    public int ikinciSayi = 4;
+
+    bool oyunBittimi = true;
+    void Start()
+    {
+
+        if (!oyunBittimi)  // oyunBittimi değişkeni false ise demek (!) atadığımız değişkenin tersi işlevi görüyor
+        {
+            print("Oyun Bitti");
+        }
+    }
+
+}
+
+________________________________________________________________________________________________________________________________
+
+
+
+                      if else şart bloğu
+
+
+ if(şartınız) {şart gerçekleşince oluşabilecek durumlar} else{diğer istediğiniz durumlar}
+
+
+
+{
+    public float vizePuani = 60f;
+    public float finalPuani = 80f;
+
+    private float ortalamaPuan;
+
+    void Start()
+    {
+        ortalamaPuan = (vizePuani + finalPuani) / 2;
+
+        if (ortalamaPuan >= 70)
+        {
+            print("öğrenci başarıyla geçti");
+        }
+        else
+        {
+            print("öğrenci kaldı");
+        }
+
+    }
+
+
+}
 
 
 
 
+_______________________________________________________________________________________________________________________________
 
 
+
+  Mantıksal operatörlerden ve(&&)/veya(||) operatörleri:
+
+
+
+
+{
+
+    public int yas;//şu anda 0 değerinde tanımlanır
+
+    public bool bayanmi;//şu anda false olarak tanımlanız
+
+    private void Start()
+    {
+        if (yas >= 18 && bayanmi)//bayanmi true ise demek
+        {
+            print("sınava girebilir");
+        }
+        else
+        {
+            print("sınava giremez");
+
+        }
+    }
+
+ }
+(iki şartı da sağlarsa sınava girebilir yazar)
+
+
+____________________________________________________________________________________________________________________________________
+
+
+{
+
+    public int yas;//şu anda 0 değerinde tanımlanır
+
+    public bool bayanmi;//şu anda false olarak tanımlanız
+
+    private void Start()
+    {
+        if (yas >= 18 || bayanmi)//bayanmi true ise demek
+        {
+            print("sınava girebilir");
+        }
+        else
+        {
+            print("sınava giremez");
+
+        }
+    }
+
+ }
+
+(Yaş veya bayan olmasına bağlı birini sağlarsa sınava girebilir)
+
+
+
+________________________________________________________________________________________________________________________
+
+
+               if/else if/ şart bloğunu 
+
+
+
+
+  if(şartlar){şart gerçekleşince oluşacak durumlar} else if(şart) {şart gerçekleşince olabilecek durumlar} else{diğer durumlar}
+
+
+
+
+   {
+
+    public int sinavPuani;
+
+    private void Start()
+    {
+        if (sinavPuani >= 90 && sinavPuani <= 100)
+        {
+            print("Puanınız A");
+        }
+        else if (sinavPuani >= 80 && sinavPuani <= 90)
+        {
+            print("Puanınız B");
+        }
+        else if (sinavPuani >= 70 && sinavPuani <= 80)
+        {
+            print("Puanınız C");
+        }
+        else
+        {
+            print("Puanınız D");
+        }
+    }
+
+
+
+_______________________________________________________________________________________________________________________________
+
+
+                                 Sayıca fazla şartlar için switch metodunu kullanmak
+
+
+
+{
+    public int zekaPuani = 5;
+
+    private void Start()
+    {
+        switch (zekaPuani)
+        {
+            case 5:
+                print("sana trigonometri öğretebilirim");
+                break;
+
+            case 4:
+                print("Hala iyi seviyedesin");
+                break;
+
+            case 3:
+                print("bu ders sana göre değil");
+                break;
+
+            case 2:
+                print("sanırım berbat bir gündesin");
+                break;
+
+            case 1:
+                print("eğitimin oldukça eksik");
+                break;
+
+            default:
+                print("Ders için bilgi düzeyi yetersiz");
+                break;
+        }
+
+
+        }
+ }
+
+
+___________________________________________________________________________________________________________________________________________
+
+
+
+                                               For döngüsü kullanımı
+
+
+
+   for(başlangıç değeri;başlangıç<ÜstDeğer;artışmiktarı){}
+
+
+
+using JetBrains.Annotations;
+using UnityEngine;
+
+public class TestManager : MonoBehaviour
+ {
+     int dusmanSayisi = 3;
+
+    private void Start()
+    {
+        for(int i=0;i<dusmanSayisi;i++)
+        {
+            print("Oluşturulan düşman sayısı" + i);
+        }
+
+
+    }
+
+}
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+0 ile 100 da dahil 0 ile 100 arasında 2 yi tam bölen adet sayısını bulalım 
+
+
+
+using JetBrains.Annotations;
+using UnityEngine;
+
+public class TestManager : MonoBehaviour
+{
+
+    int bolenAdet;
+
+    private void Start()
+    {
+        for(int i=0;i<100;i++)
+        {
+            if(i%2==0)
+            {
+                bolenAdet++;
+            }
+           }
+        print(bolenAdet);
+
+
+  }
+
+
+}
+
+
+______________________________________________________________________________________________________________________________________________________
+
+
+ 0 dahil 100 ile 0 arasında a sayısına tam bölünen sayi adetini bulalım
+
+
+{
+    int bolenAdet;
+    public int a = 2;
+
+    private void Start()
+    {
+        for(int i=0;i<100;i++)
+        {
+            
+            if(i%a==0)
+            {
+                bolenAdet++;
+            }
+                    }
+        print(bolenAdet);
+    }
+}
+
+
+
+
+  __________________________________________________________________________________________________________________________________________________
+
+
+Seçtiğimiz sayi degerine bölen 0 dahil 100 ile 0 arasındaki sayıları gösteren kod
+
+
+{
+    int bolenAdet;
+    public int a = 2;
+
+    private void Start()
+    {
+        for(int i=0;i<100;i++)
+        {
+
+            if (i % a == 0)
+            {
+                print($"{a} sayisina bölünen degerler {i}");
+                bolenAdet++;
+            }
+                    }
+        print(bolenAdet);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                         Break ifadesi ile döngüden çıkmak
+
+
+{
+  private void Start()
+    {
+        for (int i = 0; i < 30; i++)
+        {
+
+           print(i);
+           if(i==12)
+            {
+                break;
+            }
+        }
+
+
+    }
+}
+
+
+                  
+_____________________________________________________________________________________________________________________________________________-
+
+                                            while döngüsünü tanıyalım
+
+
+{
+    int yikanacakBardakSayisi = 4;
+
+    private void Start()
+    {
+        
+
+        while(yikanacakBardakSayisi>0)
+        {
+            print("sıradaki bardak yıkandı");
+           yikanacakBardakSayisi--;
+        }
+
+
+    }
+}
+
+
+___________________________________________________________________________________________________________________________________________
+
+
+                                        Fonksiyon ya da metod kavramını öğrenelim
+
+
+
+public class TestManager : MonoBehaviour
+{
+
+    
+    private void Start()
+    {
+        IlkFonksiyonum();//Bunu yaparak tanımladığımız fonksiyonu çalıştırabilir duruma getiririz
+    }
+
+
+
+    private void IlkFonksiyonum()//public olursa başka bir scripten bunu değiştirme imkanımız olur
+    {
+        print("benim ilk fonksiyonum");
+    }
+
+
+}
 
 
 
