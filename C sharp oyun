@@ -862,6 +862,212 @@ public class TestManager : MonoBehaviour
 
 }
 
+______________________________________________________________________________________________________________________________________________________
+
+public class TestManager : MonoBehaviour
+
+{
+
+    
+    private void Start()
+    {
+        IlkFonksiyonum();
+        ToplamaFNC(5, 10);
+    }
+
+
+
+    private void IlkFonksiyonum()
+    {
+        print("benim ilk fonksiyonum");
+    }
+
+    private void ToplamaFNC(int a,int b)
+    {
+        int toplam;
+        toplam = a + b;
+
+        print("toplam sonuc" + toplam);
+
+
+    }
+
+
+}
+
+
+burada 5 ile 10 un toplamını bulmamızda kullandık.
+
+
+___________________________________________________________________________________________________________________________________________________
+
+
+Void aslında herhangi bir değer döndürmüyor anlamındadır.
+private demeden void dersek yine private olarak algılar.
+
+
+
+
+Eğer Değer Döndürmek İstersek;
+
+
+public class TestManager : MonoBehaviour
+{
+
+ void Start()
+    {
+        print(IkiIleCarp(20));
+    }
+
+
+int IkiIleCarp(int number)
+    {
+        int sonuc;
+        sonuc = number * 2;
+        return sonuc;
+    }
+
+}
+
+
+_______________________________________________________________________________________________________________________________________________________-
+
+
+
+                                                           Dizileri tanıyalım
+
+
+
+
+Aslında veri tiplerini bir araya toplamak için kullandığımız sistematiğin kendisidir diziler.
+
+
+
+
+public class TestManager : MonoBehaviour
+{
+
+    public int[] telefonNumaralari = new int[5]; //bi alt satırdaki açıklamaya bak  
+    //Burada telefonNumaralari dizisi 5 elemandan oluşuyor demiş oluyoruz.
+    //eğer int() dersek tek bir değişken olur.int[] yaparsak dizi olur
+    //Bu kodu Unity de çalıştırırsak sağ alttaki scriptimide telefon Numaraları adı altında 5 adet element listelenecek
+        
+    void Start()
+    {
+
+    }
+}
+
+
+
+
+
+*Başka şekilde de dizileri tanımlamak istersek;
+
+
+public class TestManager : MonoBehaviour
+{
+
+    public string[] isimler = new string[] { "Ahmet", "Mehmet", "Kübra" };
+        //Yukarı satırdaki tanımlanan dizinin içerisinde gireceğimiz elemanlar belli ise süslü parantez içinde yazabiliriz
+    void Start()
+    {
+
+    }
+}
+
+
+
+
+*Başka şekilde de dizileri tanımlamak istersek;
+
+
+
+public class TestManager : MonoBehaviour
+{
+    public float[] sayilar = { 1f, 2.5f };
+    void Start()
+    {
+
+    {
+}
+
+
+
+
+____________________________________________________________________________________________________________________________________
+
+
+*Ahmet ile Mehmet isimlerini basar.
+
+
+public class TestManager : MonoBehaviour
+{
+    public string[] isimler = new string[] { "Ahmet", "Mehmet", "Kübra" };
+
+    public int[] telefonNumaralari = new int[5]; 
+
+    public float[] sayilar = { 1f, 2.5f };
+    void Start()
+    {
+        print(isimler[0]);
+        print(isimler[1]);
+    }
+}
+
+
+
+______________________________________________________________________________________________________________________________________________
+
+
+Dizinin kaç elemandan oluştuğunu bulmamız için "Length"uzunluk aracını kullanırız
+
+
+
+
+public class TestManager : MonoBehaviour
+{
+    public string[] isimler = new string[] { "Ahmet", "Mehmet", "Kübra" };
+
+    public int[] telefonNumaralari = new int[5]; 
+
+    public float[] sayilar = { 1f, 2.5f };
+    void Start()
+    {
+        print(isimler[0]);
+        print(isimler[1]);
+        
+        print(telefonNumaralari.Length);
+    }
+}
+
+
+___________________________________________________________________________________________________________________________________________________
+
+                             *Foreach döngüsü ile dizi elemanlarının hepsine ulaşmak*
+
+*Bir dizi oluşturdunuz ve bu dizi içindeki elemanlarla bir döngü oluşturmak için foreach döngüsü kullanılır.
+
+
+NOT:Sahnedeki her elemana GameObject denir.
+
+NOT: ctrl+d tuşuna basarsan nesnenin bir kopyasını üretiriz
+
+
+
+-Ürettiğimiz nesnelerin isimlerine ulaşmak istiyoruz;
+-yeni ürettiğimiz boş nesnenin üzerine script yazacağız
+
+
+ foreach (var item in collection)
+ 
+
+
+
+
+
+
+
 
 
 
