@@ -138,7 +138,33 @@ public class TestManager : MonoBehaviour
       }
       print (bolenAdet);
       }
-    
+
+*************************************************************************************************************
+
+public class TestManager : MonoBehaviour
+{
+
+void Start()
+    {
+        IlkFonksiyonum();
+        ToplamaFNC(5, 10);
+    }
+
+private void IlkFonksiyonum()
+    {
+        print("benim ilk fonksiyonum");
+    }
+
+ private void ToplamaFNC(int a, int b)
+    {
+        int toplam;
+        toplam = a + b;
+        print("toplam sonuc " + toplam);
+    }
+}
+
+
+*******************************************************************************************************
 
 
 
