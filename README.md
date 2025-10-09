@@ -161,10 +161,37 @@ private void IlkFonksiyonum()
         toplam = a + b;
         print("toplam sonuc " + toplam);
     }
-}
+      ```                                           
+    int IkiIlecarp(int number)
+ {
+      int sonuc;
+      sonuc = number * 2 ;
+      return sonuc;
+(burada IkiIlecarp fonksiyonu altı kırmızı çizgi ile gösterir çünkü fonksiyon içerisinde int değeri döndürmesini bekliyor ,ama burada void dersek direk kırmızı çizgi oluşmaz.Ama eğer içine int değişkeni atarsak kırmızı çizgi kalkar)
+    }
+
+    
+    
+        }
 
 
 *******************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
