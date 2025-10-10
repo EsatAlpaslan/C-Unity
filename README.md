@@ -148,6 +148,7 @@ void Start()
     {
         IlkFonksiyonum();
         ToplamaFNC(5, 10);
+        print(IkiIleCarp(20));
     }
 
 private void IlkFonksiyonum()
@@ -170,9 +171,18 @@ private void IlkFonksiyonum()
 (burada IkiIlecarp fonksiyonu altı kırmızı çizgi ile gösterir çünkü fonksiyon içerisinde int değeri döndürmesini bekliyor ,ama burada void dersek direk kırmızı çizgi oluşmaz.Ama eğer içine int değişkeni atarsak kırmızı çizgi kalkar)
     }
 
+yani örnek olarak ;
+    int IkiIleCarp(int number)
+{
+    int sonuc;
+    sonuc = number * 2;
+    return sonuc;(return dediğimizde çıktıyı aldırırır ve uyarı kalkmış olur)
+
+}                 
+
     
     
-        }
+
 
 
 *******************************************************************************************************
