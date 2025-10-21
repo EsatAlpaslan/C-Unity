@@ -178,7 +178,7 @@ yani örnek olarak ;
     {
        foreach (GameObject obje in kupler) 
     {
-            //ilk başta var yerine kullanacağımız dizi içindeki obje ismidir
+            //ilk başta 'var' yerine kullanacağımız dizi içindeki obje ismidir
             //Kupler dizisinin her elemanını obje ismine ata demek.Sonrasında objenin ismini değiştirebiliriz
         print(obje.name);//obje ismine tanımlı isimlerin ismini yazdır
         print(obje.transform.position.x);//obje isminde TestManagere eklediğimiz cubelerin x düzleminde konumunun değerini yazdırır
