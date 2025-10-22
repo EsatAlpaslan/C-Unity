@@ -223,7 +223,13 @@ public class TestManager : MonoBehaviour
 
         evAdresleri=evAdresleri.OrderBy(i => Random.value).ToList();//Bu kod satırı sayesinde elemanları rastgele sıralarız
 
+        
+       
         evAdresleri=evAdresleri.Distinct().ToList();//Aynı isimde olan elemanları silmiş olur
+        if (evAdresleri.Contains("Merkez Mahalle"))
+        {
+            print("aradığımız mahalle liste içinde mevcut");
+        }
         //evAdresleri.Remove("çelebi mahallesi");//Bir elemanı listeden silmiş olduk
 
         //evAdresleri.RemoveAt(2);//RemoveAt ile istediğimiz indexteki elemanı sileriz.Burada 3. elemanı sileriz
